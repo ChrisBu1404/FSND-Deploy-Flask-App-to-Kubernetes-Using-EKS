@@ -18,7 +18,7 @@ docs/_build/
 __pycache__
 .env_file
 trust.json
-*.yml
+
 
 # Coverage reports
 htmlcov/
@@ -28,7 +28,4 @@ htmlcov/
 
 # Direnv
 .envrc
-.direnv
-ci-cd-codepipeline.cfn.yml
-*.yml
-ci-cd-codepipeline.cfn.yml
+
