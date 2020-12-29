@@ -4,20 +4,17 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::752546199810:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-15ESUPOTW5UVN
+      rolearn: arn:aws:iam::752546199810:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-1R1CWZ6DWUE5F
       username: system:node:{{EC2PrivateDNSName}}
-    - rolearn: arn:aws:iam::752546199810:role/UdacityFlaskDeployCBKubectlRole
-       username: build
-       groups:
-         - system:masters
+    - groups:
+      - system:masters
+      rolearn: arn:aws:iam::752546199810:role/UdacityFlaskDeployCBKubectlRole
+      username: build
   mapUsers: |
     []
 kind: ConfigMap
 metadata:
-  annotations:
-    kubectl.kubernetes.io/last-applied-configuration: |
-      {"apiVersion":"v1","data":{"mapRoles":"- groups:\n  - system:bootstrappers\n  - system:nodes\n  rolearn: arn:aws:iam::752546199810:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-15ESUPOTW5UVN\n  username: system:node:{{EC2PrivateDNSName}}\n","mapUsers":"[]\n"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2020-12-29T12:15:31Z","managedFields":[{"apiVersion":"v1","fieldsType":"FieldsV1","fieldsV1":{"f:data":{".":{},"f:mapRoles":{},"f:mapUsers":{}}},"manager":"eksctl.exe","operation":"Update","time":"2020-12-29T12:15:31Z"},{"apiVersion":"v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2020-12-29T12:21:47Z"}],"name":"aws-auth","namespace":"kube-system","resourceVersion":"2695","selfLink":"/api/v1/namespaces/kube-system/configmaps/aws-auth","uid":"7da25b11-3373-4323-89ee-9e4be5223b41"}}
-  creationTimestamp: "2020-12-29T12:15:31Z"
+  creationTimestamp: "2020-12-29T14:50:37Z"
   managedFields:
   - apiVersion: v1
     fieldsType: FieldsV1
@@ -28,19 +25,9 @@ metadata:
         f:mapUsers: {}
     manager: eksctl.exe
     operation: Update
-    time: "2020-12-29T12:15:31Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:kubectl.kubernetes.io/last-applied-configuration: {}
-    manager: kubectl-client-side-apply
-    operation: Update
-    time: "2020-12-29T12:31:34Z"
+    time: "2020-12-29T14:50:37Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "4330"
+  resourceVersion: "1574"
   selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
-  uid: 7da25b11-3373-4323-89ee-9e4be5223b41
+  uid: 0938d40c-c618-483a-8c2e-2ddc49d05a66
