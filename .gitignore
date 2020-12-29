@@ -31,3 +31,4 @@ htmlcov/
 .direnv
 ci-cd-codepipeline.cfn.yml
 *.yml
+ci-cd-codepipeline.cfn.yml
