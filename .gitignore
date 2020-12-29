@@ -30,3 +30,4 @@ htmlcov/
 .envrc
 .direnv
 ci-cd-codepipeline.cfn.yml
+*.yml
